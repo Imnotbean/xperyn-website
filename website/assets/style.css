@@ -89,11 +89,12 @@ img { max-width: 100%; display: block; }
 }
 
 .nav-logo-img {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   border-radius: 6px;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 20%;
+  flex-shrink: 0;
 }
 
 .nav-logo-text {
