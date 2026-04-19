@@ -7,27 +7,23 @@ window.addEventListener('scroll', () => {
 // Scroll-triggered fade-up animations
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
+    if (entry.isIntersecting) entry.target.classList.add('visible');
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.1 });
 
 document.querySelectorAll(
-  '.cap-card, .who-card, .mission-card, .about-body, .stat, .section-title, .section-desc, .platform-image-wrap'
+  '.cap-card, .who-card, .mission-card, .about-body, .stat, .section-title, .section-desc, .how-step, .coming-card, .building-card, .diff-col, .pillar, .stats-card'
 ).forEach(el => {
   el.classList.add('fade-up');
   observer.observe(el);
 });
 
-// Stagger cap cards
-document.querySelectorAll('.cap-card').forEach((el, i) => {
-  el.style.transitionDelay = `${i * 60}ms`;
-});
-
-document.querySelectorAll('.who-card').forEach((el, i) => {
-  el.style.transitionDelay = `${i * 80}ms`;
-});
+// Stagger animations
+document.querySelectorAll('.cap-card').forEach((el, i) => { el.style.transitionDelay = `${i * 60}ms`; });
+document.querySelectorAll('.who-card').forEach((el, i) => { el.style.transitionDelay = `${i * 80}ms`; });
+document.querySelectorAll('.coming-card').forEach((el, i) => { el.style.transitionDelay = `${i * 80}ms`; });
+document.querySelectorAll('.building-card').forEach((el, i) => { el.style.transitionDelay = `${i * 60}ms`; });
+document.querySelectorAll('.stats-card').forEach((el, i) => { el.style.transitionDelay = `${i * 80}ms`; });
 
 // Mobile nav toggle
 const hamburger = document.querySelector('.nav-hamburger');
@@ -40,9 +36,15 @@ hamburger?.addEventListener('click', () => {
   navCta.style.display = open ? '' : 'none';
 });
 
-// Close mobile nav on link click
 document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.style.cssText = '';
-  });
+  link.addEventListener('click', () => { navLinks.style.cssText = ''; });
 });
+
+// Early access form
+function handleEarlyAccess(e) {
+  e.preventDefault();
+  const form = e.target;
+  const success = document.getElementById('early-success');
+  form.style.display = 'none';
+  success.style.display = 'flex';
+}
