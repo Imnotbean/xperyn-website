@@ -528,9 +528,9 @@
         <div class="section-label">Early Access</div>
         <h2 class="section-title">Be among the first<br /><span class="gradient-text">to use XPERYN.</span></h2>
         <p class="early-desc">We are opening early access to a limited group of engineering students and technical learners. Join the list and be the first to know when XPERYN is ready.</p>
-        <form class="early-form" onsubmit="handleEarlyAccess(event)">
+        <form class="early-form" onsubmit="handleEarlyAccess(event)" action="https://formspree.io/f/xrerkrdl" method="POST">
           <div class="early-form-row">
-            <input type="email" class="early-input" placeholder="Enter your email address" required />
+            <input type="email" name="email" class="early-input" placeholder="Enter your email address" required />
             <button type="submit" class="btn-primary">Join the List</button>
           </div>
           <p class="early-note">No spam. No noise. Just a notification when we're ready to onboard early users.</p>
@@ -639,6 +639,237 @@
           <div class="mission-label">Vision</div>
           <p>To build an AI platform that helps the next generation of engineers connect theory with tools, software with hardware, and learning with real execution.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY NOW -->
+  <section class="section-whynow">
+    <div class="container">
+      <div class="whynow-inner">
+        <div class="whynow-left">
+          <div class="section-label">Why Now</div>
+          <h2 class="section-title">The most important<br />moment in engineering<br /><span class="gradient-text">education in decades.</span></h2>
+        </div>
+        <div class="whynow-right">
+          <div class="whynow-point">
+            <div class="whynow-num">01</div>
+            <div>
+              <h3>AI has changed what engineers are expected to know</h3>
+              <p>The baseline expectation for a working engineer has shifted dramatically. Knowing theory is no longer enough. Engineers are now expected to write code, use simulation tools, understand hardware, and work with AI systems — all at once. Education has not caught up.</p>
+            </div>
+          </div>
+          <div class="whynow-point">
+            <div class="whynow-num">02</div>
+            <div>
+              <h3>Generic AI tools are not built for technical depth</h3>
+              <p>ChatGPT and similar tools were built for general use. They can answer engineering questions, but they were not designed to support the full engineering learning journey — the subject context, the simulation workflows, the embedded logic, the industrial thinking. XPERYN is.</p>
+            </div>
+          </div>
+          <div class="whynow-point">
+            <div class="whynow-num">03</div>
+            <div>
+              <h3>The next generation of engineers is being formed right now</h3>
+              <p>The students learning engineering today will be the engineers building the infrastructure, systems, and technology of the next two decades. How they learn — and what tools they learn with — will shape what they are capable of. This is the right moment to build something better.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- USE CASES -->
+  <section class="section-usecases">
+    <div class="container">
+      <div class="section-label">Use Cases</div>
+      <h2 class="section-title">Real situations.<br /><span class="gradient-text">Real support.</span></h2>
+      <p class="section-desc">XPERYN is built for the moments that actually happen in an engineering student's life — not hypothetical scenarios, but the real friction points that slow down learning and kill momentum.</p>
+      <div class="usecase-grid">
+
+        <div class="usecase-card">
+          <div class="usecase-scenario">The night before an exam</div>
+          <p>You have a control systems paper tomorrow and the Bode plot concept still does not click. XPERYN walks you through it step by step — not a textbook definition, but a real explanation built around what you are actually struggling to understand.</p>
+        </div>
+
+        <div class="usecase-card">
+          <div class="usecase-scenario">Stuck on an Arduino project</div>
+          <p>Your sensor is reading garbage values and you have no idea why. XPERYN helps you debug the wiring logic, check your code structure, and understand what is actually happening between the hardware and the microcontroller.</p>
+        </div>
+
+        <div class="usecase-card">
+          <div class="usecase-scenario">MATLAB throwing errors you don't understand</div>
+          <p>Your Simulink model is not converging and the error message tells you nothing useful. XPERYN explains what the error actually means in engineering terms and helps you fix the model — not just copy-paste a solution.</p>
+        </div>
+
+        <div class="usecase-card">
+          <div class="usecase-scenario">Starting a final year project</div>
+          <p>You have a project title and a blank page. XPERYN helps you break down the technical scope, identify the tools and platforms you need, structure your approach, and start building with a clear direction.</p>
+        </div>
+
+        <div class="usecase-card">
+          <div class="usecase-scenario">Learning Python for the first time as an engineer</div>
+          <p>You know circuits but you have never written code. XPERYN teaches Python the way an engineer needs to learn it — through numerical methods, signal processing, data analysis, and automation — not through generic programming tutorials.</p>
+        </div>
+
+        <div class="usecase-card">
+          <div class="usecase-scenario">Preparing for a technical interview</div>
+          <p>You have an internship interview next week and need to brush up on power electronics and embedded systems. XPERYN helps you review the concepts that actually come up, work through technical questions, and build confidence before you walk in.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section class="section-roadmap">
+    <div class="container">
+      <div class="section-label">Roadmap</div>
+      <h2 class="section-title">Where we are.<br /><span class="gradient-text">Where we're going.</span></h2>
+      <p class="section-desc">XPERYN is being built in focused stages. Each version adds a new layer of capability — from core tutoring to full-spectrum engineering support.</p>
+      <div class="roadmap-list">
+
+        <div class="roadmap-item roadmap-active">
+          <div class="roadmap-marker">
+            <div class="roadmap-dot roadmap-dot-active"></div>
+            <div class="roadmap-line"></div>
+          </div>
+          <div class="roadmap-content">
+            <div class="roadmap-version">Version 1 — Now Building</div>
+            <h3>Engineering AI Tutor</h3>
+            <p>Subject-aware tutoring across core electrical and electronic engineering subjects. Circuit analysis, control systems, embedded systems, analog and digital electronics, and signals and systems — with Python and MATLAB code support built in.</p>
+            <div class="roadmap-tags">
+              <span class="roadmap-tag">Subject Tutoring</span>
+              <span class="roadmap-tag">Python Support</span>
+              <span class="roadmap-tag">MATLAB Support</span>
+              <span class="roadmap-tag">Step-by-Step Problem Solving</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="roadmap-item">
+          <div class="roadmap-marker">
+            <div class="roadmap-dot"></div>
+            <div class="roadmap-line"></div>
+          </div>
+          <div class="roadmap-content">
+            <div class="roadmap-version">Version 2 — Coming Next</div>
+            <h3>Embedded & Simulation Layer</h3>
+            <p>Full embedded systems support for Arduino, Raspberry Pi, and microcontroller workflows. Expanded simulation guidance for MATLAB and Simulink — from model setup to result interpretation. Hardware-software integration support for real project builds.</p>
+            <div class="roadmap-tags">
+              <span class="roadmap-tag">Arduino & Raspberry Pi</span>
+              <span class="roadmap-tag">Simulink Workflows</span>
+              <span class="roadmap-tag">Embedded C</span>
+              <span class="roadmap-tag">Project Build Support</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="roadmap-item">
+          <div class="roadmap-marker">
+            <div class="roadmap-dot"></div>
+            <div class="roadmap-line"></div>
+          </div>
+          <div class="roadmap-content">
+            <div class="roadmap-version">Version 3 — Planned</div>
+            <h3>Industrial & AI Productivity Layer</h3>
+            <p>Industrial engineering exposure — automation logic, PLC-style thinking, instrumentation, control architecture, and real-world engineering workflows. Plus a full AI productivity layer to help engineers use modern AI tools, agent systems, and intelligent workflows as part of their daily technical work.</p>
+            <div class="roadmap-tags">
+              <span class="roadmap-tag">Industrial Automation</span>
+              <span class="roadmap-tag">PLC Logic</span>
+              <span class="roadmap-tag">AI Agent Workflows</span>
+              <span class="roadmap-tag">Technical Productivity</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="roadmap-item">
+          <div class="roadmap-marker">
+            <div class="roadmap-dot"></div>
+          </div>
+          <div class="roadmap-content">
+            <div class="roadmap-version">Version 4 — Vision</div>
+            <h3>Full-Spectrum Engineering Growth Platform</h3>
+            <p>The complete XPERYN vision — a unified AI platform that supports the entire engineering learning journey from first-year fundamentals to advanced technical execution. Personalized growth paths, project-based learning support, and a system that actively helps users become stronger, more capable, and more future-ready engineers.</p>
+            <div class="roadmap-tags">
+              <span class="roadmap-tag">Personalized Learning Paths</span>
+              <span class="roadmap-tag">Full Subject Coverage</span>
+              <span class="roadmap-tag">Project Companion</span>
+              <span class="roadmap-tag">Career Readiness</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-faq">
+    <div class="container">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Common questions<br /><span class="gradient-text">answered.</span></h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>How is XPERYN different from ChatGPT or other AI tools?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>ChatGPT and similar tools are built for general use. They can answer engineering questions, but they were not designed with engineering education in mind. XPERYN is being built specifically for engineering students — with subject-aware understanding, technical depth across engineering disciplines, simulation and embedded workflow support, and a focus on developing real capability rather than just generating answers. The difference is not just what it knows, but how it is designed to help you grow.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>When will XPERYN be available?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>We are currently building Version 1 — the Engineering AI Tutor. Early access will open to a limited group of users before the full public launch. Join the early access list to be notified first and get priority access when we open up.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What engineering subjects does XPERYN cover?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Version 1 focuses on core electrical and electronic engineering subjects — circuit analysis, control systems, embedded systems, analog electronics, digital electronics, and signals and systems. Subsequent versions will expand coverage to include power systems, communications, electromagnetics, instrumentation, robotics, and more. The long-term goal is full coverage across the engineering learning stack.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Is XPERYN only for university students?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>No. XPERYN is built for anyone on a technical engineering learning journey — university students, self-learners, bootcamp participants, early-career engineers, and professionals who want to strengthen their technical foundations. If you are learning engineering or building engineering capability, XPERYN is designed for you.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Will XPERYN just give me answers to copy?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>No — and this is a core design principle. XPERYN is built to help you understand and grow, not to generate answers for you to submit. The goal is to help you become a stronger engineer, not to shortcut the learning process. You will get explanations, guided problem-solving, and technical support — but the thinking stays with you.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What does early access include?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Early access users will be the first to use the Engineering AI Tutor when it launches. You will also have the opportunity to give direct feedback that shapes what gets built next, and you will receive early access pricing when XPERYN moves to a paid model. Join the list to secure your spot.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

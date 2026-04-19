@@ -1,3 +1,11 @@
+// FAQ toggle
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
 // Navbar scroll effect
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
@@ -41,10 +49,28 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 // Early access form
-function handleEarlyAccess(e) {
+async function handleEarlyAccess(e) {
   e.preventDefault();
   const form = e.target;
-  const success = document.getElementById('early-success');
-  form.style.display = 'none';
-  success.style.display = 'flex';
+  const btn = form.querySelector('button[type="submit"]');
+  btn.textContent = 'Submitting...';
+  btn.disabled = true;
+
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      form.style.display = 'none';
+      document.getElementById('early-success').style.display = 'flex';
+    } else {
+      btn.textContent = 'Try again';
+      btn.disabled = false;
+    }
+  } catch {
+    btn.textContent = 'Try again';
+    btn.disabled = false;
+  }
 }
