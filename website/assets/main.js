@@ -40,7 +40,7 @@ const navCta = document.querySelector('.nav-cta');
 
 hamburger?.addEventListener('click', () => {
   const open = navLinks.style.display === 'flex';
-  navLinks.style.cssText = open ? '' : 'display:flex;flex-direction:column;position:fixed;top:64px;left:0;right:0;background:rgba(8,8,8,0.97);padding:24px;gap:20px;border-bottom:1px solid rgba(255,255,255,0.07);backdrop-filter:blur(20px)';
+  navLinks.style.cssText = open ? '' : 'display:flex;flex-direction:column;position:fixed;top:80px;left:50%;transform:translateX(-50%);background:rgba(255,255,255,0.95);padding:24px;gap:20px;border:1px solid rgba(0,0,0,0.08);border-radius:16px;backdrop-filter:blur(20px);min-width:200px;align-items:center;box-shadow:0 8px 32px rgba(0,0,0,0.08)';
   navCta.style.display = open ? '' : 'none';
 });
 
