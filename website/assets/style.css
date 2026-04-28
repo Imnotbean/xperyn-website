@@ -180,6 +180,35 @@ img { max-width: 100%; display: block; }
   transition: var(--transition);
 }
 
+/* Language Toggle */
+.lang-toggle {
+  display: flex;
+  gap: 2px;
+  background: rgba(0,0,0,0.04);
+  border-radius: 8px;
+  padding: 2px;
+  flex-shrink: 0;
+}
+
+.lang-btn {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-3);
+  cursor: pointer;
+  font-family: var(--font);
+  transition: all var(--transition);
+}
+
+.lang-btn.lang-active {
+  background: rgba(255,255,255,0.9);
+  color: var(--text);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
 /* ============================================================
    BUTTONS
    ============================================================ */
@@ -1915,6 +1944,7 @@ blockquote {
   .nav-links, .nav-cta { display: none; }
   .nav-hamburger { display: flex; }
   .nav-inner { width: 100%; }
+  .lang-toggle { margin-left: auto; margin-right: 8px; }
 
   #navbar { top: 12px; }
   #hero { padding: 100px 24px 80px; }
