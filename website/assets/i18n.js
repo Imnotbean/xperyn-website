@@ -1,6 +1,7 @@
 // XPERYN i18n — English / 简体中文
 const translations = {
   // Nav
+  'nav.demo': { en: 'Demo', zh: '演示' },
   'nav.platform': { en: 'Platform', zh: '平台' },
   'nav.capabilities': { en: 'Features', zh: '功能' },
   'nav.who': { en: "Who It's For", zh: '适用人群' },
@@ -21,8 +22,20 @@ const translations = {
   'tag.arduino': { en: 'Arduino & Raspberry Pi', zh: 'Arduino 和树莓派' },
   'tag.project': { en: 'Project Planning', zh: '项目规划' },
   'tag.exam': { en: 'Exam Revision', zh: '考试复习' },
+  'tag.vision': { en: 'Image Recognition', zh: '图像识别' },
   'tag.general': { en: 'General Engineering', zh: '通用工程' },
   'trusted.label': { en: 'Built for engineering students', zh: '专为工程学生打造' },
+
+  // Demo
+  'demo.label': { en: 'See It in Action', zh: '实际演示' },
+  'demo.title': { en: 'Watch XPERYN', zh: '观看 XPERYN' },
+  'demo.title2': { en: 'in 60 seconds.', zh: '60 秒演示。' },
+  'demo.desc': { en: 'From signup to your first AI-guided engineering answer — see how XPERYN works in a real session.', zh: '从注册到获得第一个 AI 工程指导 — 观看 XPERYN 的真实使用过程。' },
+  'demo.cta': { en: 'Try It Yourself', zh: '亲自试试' },
+
+  // Image Recognition
+  'cap.vision.title': { en: 'Image Recognition', zh: '图像识别' },
+  'cap.vision.desc': { en: 'Upload photos of circuits, handwritten equations, oscilloscope readings, wiring diagrams, or error screens. XPERYN analyzes the image and provides targeted engineering guidance.', zh: '上传电路照片、手写方程、示波器读数、接线图或错误截图。XPERYN 分析图像并提供针对性的工程指导。' },
 
   // Problem
   'problem.label': { en: 'The Problem', zh: '问题所在' },

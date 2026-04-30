@@ -587,6 +587,36 @@ img { max-width: 100%; display: block; }
 }
 
 /* ============================================================
+   DEMO VIDEO
+   ============================================================ */
+.section-demo {
+  padding: 120px 0;
+  background: var(--bg);
+}
+
+.section-demo .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.demo-video-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.demo-video {
+  width: 100%;
+  display: block;
+  background: #000;
+}
+
+/* ============================================================
    THE PROBLEM
    ============================================================ */
 .section-problem {
@@ -766,9 +796,44 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 8px 32px rgba(0,132,255,0.06);
 }
 
+/* New Feature Banner */
+.new-feature-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 28px 32px;
+  border: 1px solid rgba(0,132,255,0.25);
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(0,132,255,0.06) 0%, rgba(124,58,237,0.03) 50%, var(--surface) 100%);
+  box-shadow: 0 4px 24px rgba(0,132,255,0.08), inset 0 1px 0 rgba(255,255,255,0.6);
+  margin-bottom: 24px;
+}
+
+.new-feature-badge {
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 4px 10px;
+  border-radius: 100px;
+  background: var(--accent-solid);
+  color: #fff;
+}
+
+.new-feature-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.new-feature-content p {
+  font-size: 14px;
+  color: var(--text-2);
+  line-height: 1.65;
+}
+
 .cap-icon-wrap {
-  width: 44px;
-  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;

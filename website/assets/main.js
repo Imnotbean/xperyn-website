@@ -20,7 +20,7 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll(
-  '.cap-card, .who-card, .mission-card, .about-body, .stat, .section-title, .section-desc, .how-step, .coming-card, .building-card, .diff-col, .pillar, .stats-card'
+  '.cap-card, .who-card, .mission-card, .about-body, .stat, .section-title, .section-desc, .how-step, .coming-card, .building-card, .diff-col, .pillar, .stats-card, .demo-video-wrap, .new-feature-banner'
 ).forEach(el => {
   el.classList.add('fade-up');
   observer.observe(el);
